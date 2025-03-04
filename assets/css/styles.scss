@@ -358,6 +358,7 @@ img {
   &__container {
     display: flex;
     justify-content: center;
+    flex-direction: row;
   }
   &__subtitle {
     font-size: var(--normal-font-size);
@@ -393,14 +394,37 @@ img {
     font-size: var(--normal-font-size);
     cursor: pointer;
   }
+  &__info{
+    display: flex;
+    gap: 25px;
+    padding: 0 15px;
+  }
 }
 
 /* ===== FOOTER =====*/
 .footer {
+  position: relative;
   background-color: var(--dark-color);
-
+  &__promo{
+    position: absolute;
+    bottom: 0;
+    right: 10px;
+    &-text{
+      color: white;
+    }
+    &-img{
+      height: 100px;
+    }
+    &-link{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+  }
   &__container {
     row-gap: 2rem;
+    margin-bottom: 20px;
   }
   &__title {
     font-size: var(--normal-font-size);
@@ -541,6 +565,10 @@ img {
       font-size: 2rem;
     }
   }
+  .contact{&__info{
+flex-direction: column;
+  }}
+  
 }
 @media screen and (max-width: 549px) {
   .opinion {
