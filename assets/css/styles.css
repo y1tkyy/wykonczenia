@@ -347,9 +347,8 @@ img {
 
 /* ===== CONTACT =====*/
 .contact__container {
-  row-gap: 2rem;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  display: flex;
+  justify-content: center;
 }
 .contact__subtitle {
   font-size: var(--normal-font-size);
